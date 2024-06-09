@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Rubik:wght@300&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Rubik:wght@300&family=Satisfy&family=Sixtyfour&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.message{
+    border-radius: 40px;
+    background: #a36637;
+    padding: 10px 12px;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    z-index: 99;
+}
+.message i{
+    font-size: 1.6em;
+    color: white;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px ;
+    z-index: 9;
+    position: fixed;
+    background-color: rgb(255, 251, 244);
+    transition:  0.3s ease-in-out;
+}
+header .up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .up .loginicon{
+    display: flex;
+    margin-right: 60px;
+}
+header .up h2{
+    font-family: 'Rubik', sans-serif;
+font-family: 'Rubik Glitch Pop', system-ui;
+font-family: 'Satisfy', cursive;
+font-size: 2.5em;
+font-weight: 500;
+color: #a36637  ;
+cursor: pointer;
+transition: .5s ease;
+}
+header .up h2:hover{
+    color: black;
+}
+.social-icons{
+    margin-right: 20px;
+}
+.social-icons i{
+    margin-left: 7px;
+    cursor: pointer;
+}
+.login{
+    display: flex;
+}
+.login h4{
+    margin-right: 15px;
+    color: #a36637;
+    cursor: pointer;
+}
+.input{
+    position: relative;
+    border-bottom: 1px solid #a36637;
+    margin-left: 20px;
+    transition: .5s ease;
+
+}
+.input i{
+    position: absolute;
+    bottom:  25%;
+    color: #a36637;
+    right: 100%;
+    transition: .5s ease;
+
+}
+.input input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #a36637;
+    transition: .5s ease;
+}
+.input input:valid + i,
+.input input:focus + i{
+    color: black;
+}
+.input:hover{
+    border-bottom: 3px solid #a36637;
+
+}
+.down{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.down li{
+    margin: 30px 50px ;
+}
+.down li a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    text-transform: capitalize;
+    transition: .5s ease-in-out;
+}
+.down li a:hover{
+    color: #a36637;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.one{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/canvas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#sectionone{
+    position: relative;
+    top: 40px;
+}
+.one #sectionone h1{
+    
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: white;
+    font-size: 4.5em;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.one #sectionone h3{
+    color: white;
+    border: 1px solid #fff;
+    padding: 20px;
+    font-size: 1em;
+    width: 40%;
+    font-weight: 100;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    position: absolute;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+}
+.one #sectionone h3:hover{
+    background: #fff;
+    color: #a36637;
+}
+.two{
+    padding: 50px;
+}
+.two .title{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.two .khat{
+    width: 15px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    height: 5px;
+    background-color: black;
+}
+.container{
+    margin-top: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+}
+.container .card{
+    margin-left: 20px;
+    border-radius: 30px;
+}
+.card h2{
+    margin-top: 20px;
+    font-size: 2em;
+}
+.two #begs{
+    position: absolute;
+    font-size: 1.3em;
+    font-weight: 300;
+    text-transform: capitalize;
+    left: 40%;
+    bottom: 05%;
+    padding: 20px;
+    border: 1px solid #a36637;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.two #begs:hover{
+    color: white;
+    background: #a36637;
+}
+.third{
+    display: flex;
+    width: 100%;
+}
+.third .content{
+    width: 50%;
+    position: relative;
+    height: 100vh;
+}
+.third .content img{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+}
+.third .content h2{
+    z-index: 999;
+    position: absolute;
+    top: 70%;
+    display: flex;
+    flex-direction: column;
+    left: 40%;
+}
+.third .content h2 i {
+    color: #a36637;
+}
